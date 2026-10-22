@@ -1,0 +1,28 @@
+[
+  {
+    "title": "最近单曲循环",
+    "artist": "ROSÉ",
+    "year": "2024",
+    "cover": "rosie.jpg",
+    "tracks": [
+      {
+        "title": "number one girl",
+        "artist": "ROSÉ",
+        "file": "rose-number-one.mp3",
+        "duration": ""
+      },
+      {
+        "title": "toxic till the end",
+        "artist": "ROSÉ",
+        "file": "rose-toxic.mp3",
+        "duration": ""
+      },
+      {
+        "title": "drinks or coffee",
+        "artist": "ROSÉ",
+        "file": "rose-drinks.mp3",
+        "duration": ""
+      }
+    ]
+  }
+]

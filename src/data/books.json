@@ -1,0 +1,50 @@
+[
+  {
+    "title": "勇气",
+    "author": "萨莉·克劳切克",
+    "year": "2019",
+    "cover": "yongqi.jpg",
+    "douban": "https://book.douban.com/subject/33414761/",
+    "intro": "作为女性的你要勇于追求自己的事业与人生。"
+  },
+  {
+    "title": "德米安",
+    "author": "赫尔曼·黑塞",
+    "year": "1919",
+    "cover": "demian.jpg",
+    "douban": "https://book.douban.com/subject/38221560/",
+    "intro": "是,人必须找到他的梦。之后,路就不再艰难。但梦是不会恒久的,所有的梦都会被新的梦取代。人不可能抓住任何一个梦。"
+  },
+  {
+    "title": "穷查理宝典",
+    "author": "查理·芒格 / 彼得·考夫曼",
+    "year": "2016",
+    "cover": "qiongchali.jpg",
+    "douban": "https://book.douban.com/subject/26831789/",
+    "intro": "在自己的能力圈范围内,耐心等待,识别机会后,全力出击。"
+  },
+  {
+    "title": "幸福蒙太奇",
+    "author": "马凌云",
+    "year": "2024",
+    "cover": "xingfu.jpg",
+    "douban": "https://book.douban.com/subject/37841159/",
+    "intro": "你玩愚蠢的游戏,就会得到愚蠢的奖品。"
+  },
+  {
+    "title": "其中一个是谎言",
+    "author": "金爱烂",
+    "year": "2025",
+    "cover": "qizhong.jpg",
+    "douban": "https://book.douban.com/subject/38219662/",
+    "intro": "可是,生活和故事不一样。它随时准备着大步走来,给我们一耳光。纸可能被撕碎,铅笔也可能被抢走。"
+  },
+  {
+    "title": "像哲学家一样生活",
+    "author": "威廉·B. 欧文",
+    "year": "2018",
+    "cover": "xiangzhe.jpg",
+    "douban": "https://book.douban.com/subject/27167270/",
+    "intro": "他们并不希望我们停止思考未来、为明天做计划;他们其实是要我们在为明天思考和做计划的同时,记着欣赏今天。"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "title": "银翼杀手 2049",
+    "original": "Blade Runner 2049",
+    "director": "丹尼斯·维伦纽瓦",
+    "year": "2017",
+    "poster": "br2049.jpg",
+    "douban": "https://movie.douban.com/subject/10512661/",
+    "note": "[样例] 换成你自己的一两句话。写你看完想到什么,不要抄剧情简介 —— 剧情点开豆瓣就能看到,你的看法只有这里有。"
+  },
+  {
+    "title": "花样年华",
+    "original": "In the Mood for Love",
+    "director": "王家卫",
+    "year": "2000",
+    "poster": "itmfl.jpg",
+    "douban": "https://movie.douban.com/subject/1291557/",
+    "note": "[样例] poster 填 public/posters/ 里的文件名,没有图也能跑,会显示色块占位。"
+  },
+  {
+    "title": "海边的曼彻斯特",
+    "original": "Manchester by the Sea",
+    "director": "肯尼斯·罗纳根",
+    "year": "2016",
+    "poster": "mbts.jpg",
+    "douban": "https://movie.douban.com/subject/25980443/",
+    "note": "[样例]"
+  },
+  {
+    "title": "教父",
+    "original": "The Godfather",
+    "director": "弗朗西斯·福特·科波拉",
+    "year": "1972",
+    "poster": "godfather.jpg",
+    "douban": "https://movie.douban.com/subject/1291841/",
+    "note": "[样例]"
+  },
+  {
+    "title": "千与千寻",
+    "original": "千と千尋の神隠し",
+    "director": "宫崎骏",
+    "year": "2001",
+    "poster": "spirited.jpg",
+    "douban": "https://movie.douban.com/subject/1291561/",
+    "note": "[样例]"
+  },
+  {
+    "title": "爱在黎明破晓前",
+    "original": "Before Sunrise",
+    "director": "理查德·林克莱特",
+    "year": "1995",
+    "poster": "sunrise.jpg",
+    "douban": "https://movie.douban.com/subject/1296339/",
+    "note": "[样例] 最后一条后面不要加逗号,这是 JSON 最常见的报错来源。"
+  }
+]

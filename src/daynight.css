@@ -1,0 +1,121 @@
+/* =========================================================================
+   昼夜开关
+   -------------------------------------------------------------------------
+   顶部正中一条窄的拨钮。它是全站唯一的全局控制,放正中说明它管的是
+   整个场景;播放器在左上角,两者不打架。
+   颜色跟着模式走 —— 白天是暖木色,夜晚是冷蓝,开关本身就是状态指示。
+   ========================================================================= */
+
+.dn {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;                    /* 低于面板遮罩(20),开面板时会被盖住 */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 14px rgba(43, 40, 35, 0.1);
+  color: #5c574e;
+  transition: background-color 420ms ease, color 420ms ease,
+              box-shadow 420ms ease;
+  user-select: none;
+}
+
+.dn.is-night {
+  background: rgba(20, 20, 26, 0.55);
+  color: rgba(242, 239, 232, 0.7);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- 两侧图标 ---------- */
+.dn-icon {
+  display: flex;
+  width: 17px;
+  height: 17px;
+  opacity: 0.35;
+  transition: opacity 420ms ease;
+}
+
+.dn-icon svg { width: 100%; height: 100%; }
+
+/* 当前模式那一侧点亮 */
+.dn:not(.is-night) .dn-sun  { opacity: 1; }
+.dn.is-night        .dn-moon { opacity: 1; }
+
+/* ---------- 拨钮 ---------- */
+.dn-switch {
+  position: relative;
+  width: 46px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(43, 40, 35, 0.16);
+  cursor: pointer;
+  transition: background-color 420ms ease;
+}
+
+.dn.is-night .dn-switch {
+  background: rgba(242, 239, 232, 0.18);
+}
+
+.dn-switch:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.dn-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #c9a273;                     /* 白天:木色,和房间同一套色 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+              background-color 420ms ease;
+}
+
+.dn.is-night .dn-knob {
+  transform: translateX(22px);
+  background: #fff0d0;                     /* 夜晚:灯罩色 */
+}
+
+/* ---------- 加载夜晚贴图时 ---------- */
+/* 首次切到夜晚要下载约 12 MB,这期间禁用点击并让拨钮呼吸 */
+.dn.is-busy {
+  pointer-events: none;
+}
+
+.dn.is-busy .dn-knob {
+  animation: dn-pulse 900ms ease-in-out infinite;
+}
+
+@keyframes dn-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.35; }
+}
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 640px) {
+  .dn {
+    top: 12px;
+    gap: 10px;
+    padding: 6px 12px;
+  }
+  .dn-switch { width: 40px; height: 22px; }
+  .dn-knob   { width: 16px; height: 16px; }
+  .dn.is-night .dn-knob { transform: translateX(18px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dn, .dn-switch, .dn-knob, .dn-icon { transition-duration: 1ms; }
+  .dn.is-busy .dn-knob { animation: none; opacity: 0.5; }
+}
